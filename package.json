@@ -1,6 +1,6 @@
 {
   "name": "nodeapp",
-  "description": "Mobile site for Penguin",
+  "description": "flux express site",
   "main": "server.js",
   "dependencies": {
     "express": "~4.0.0",

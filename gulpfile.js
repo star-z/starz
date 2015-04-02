@@ -1,5 +1,5 @@
-var browserify = require('browserify');
 var gulp = require('gulp');
+var browserify = require('browserify');
 var source = require('vinyl-source-stream');
  
 gulp.task('scripts', function() {
@@ -11,6 +11,8 @@ gulp.task('scripts', function() {
 });
 
 /*
+var browserify = require('gulp-browserify');
+
 gulp.task('scripts', function () {
 
     gulp.src(['app/client/grid-client.js','app/client/todos-client.js','app/client/products-client.js' ])

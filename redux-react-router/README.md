@@ -1,4 +1,4 @@
-Redux React Transform Example
+Redux React Router Example
 =====================
 
 * hot reloading React components;

@@ -1,24 +1,5 @@
 {
-  "name": "nodeapp",
-  "description": "flux express site",
-  "main": "server.js",
-  "dependencies": {
-    "express": "~4.0.0",
-    "fluxxor": "^1.5.2",
-    "ejs": "~0.8.5",
-    "body-parser": "^1.12.2",
-    "cookie-parser": "^1.3.4",
-    "serve-favicon": "^2.2.0",
-    "griddle-react": "^0.1.19",
-    "path": "^0.11.14",
-    "react": "~0.12.0"
-  },
-  "devDependencies": {
-    "browserify": "~3.20.0",
-    "gulp": "~3.8.9",
-    "gulp-browserify": "~0.5.0",
-    "node-jsx": "~0.2.0",
-    "react-tools": "^0.12.0",
-    "reactify": "0.15.2"
-  }
+  "name": "redux-examples",
+  "description": "just some redux examples",
+  "main": "server.js"
 }

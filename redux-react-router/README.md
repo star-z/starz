@@ -7,9 +7,7 @@ Redux React Transform Example
 
 Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plugin-react-transform)** and a few custom transforms.  
 
-## Demo
-
-![](https://raw.githubusercontent.com/StevenIseki/redux-examples/master/redux-react-router/screenshot.png)
+## Run
 
 ```
 npm install

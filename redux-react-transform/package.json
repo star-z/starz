@@ -25,7 +25,7 @@
     "rimraf": "^2.4.3",
     "webpack": "^1.9.6",
     "webpack-dev-middleware": "^1.2.0",
-    "webpack-hot-middleware": "^2.0.0",
+    "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
     "react": "^0.14.0",

@@ -1,8 +1,8 @@
 Redux React Transform Example
 =====================
 
-* hot reloading React components;
-* routing with redux-router and react-router;
+* hot reloading React components
+* routing with redux-router and react-router
 * redux dev tools
 * babel-plugin-react-transform
 * webpack

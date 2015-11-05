@@ -1,11 +1,12 @@
-import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
 import { Provider, connect } from 'react-redux';
+import React, { Component, PropTypes } from 'react';
+import { render } from 'react-dom';
 import { Route, Link } from 'react-router';
-import { pushState } from 'redux-router';
 
+/* connect */
 @connect((state) => ({}))
-export class App extends Component {
+
+class App extends Component {
   static propTypes = {
     children: PropTypes.node
   }
@@ -21,6 +22,7 @@ export class App extends Component {
 
     dispatch(pushState(null, '/parent/child/custom'));
   }
+
 
   render() {
     const links = [

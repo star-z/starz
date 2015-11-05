@@ -1,19 +1,17 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
+import { Provider, connect } from 'react-redux';
+import store from './store/index.js'
 import { ReduxRouter } from 'redux-router';
-
 import { Route, Link } from 'react-router';
-import { Provider } from 'react-redux';
-import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
-
-
-
 import { App } from './App'
 import { Parent } from './Parent'
 import { Child } from './Child'
-import { store } from './store'
 
-class Root extends Component {
+import { devTools } from 'redux-devtools';
+import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
+
+
+export class Root extends Component {
   render() {
     return (
       <div>
@@ -34,5 +32,3 @@ class Root extends Component {
     );
   }
 }
-
-ReactDOM.render(<Root />, document.getElementById('root'));

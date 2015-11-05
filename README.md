@@ -2,7 +2,7 @@
 
 ## Examples
 
-Most of these examples are based off the legendary work of [gaeron](https://github.com/gaearon)
+Most of these examples are based off the legendary work of [gaeron](https://github.com/gaearon) and [acdlite](https://github.com/acdlite)
 
 * [redux-basic](https://github.com/StevenIseki/redux-examples/redux-basic)
 * [redux-react-transform](https://github.com/StevenIseki/redux-examples/redux-react-transform)

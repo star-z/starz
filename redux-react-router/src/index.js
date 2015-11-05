@@ -1,12 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { ReduxRouter } from 'redux-router';
-
 import { Route, Link } from 'react-router';
 import { Provider } from 'react-redux';
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
-
-
 
 import { App } from './App'
 import { Parent } from './Parent'

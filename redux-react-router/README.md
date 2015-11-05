@@ -9,7 +9,7 @@ Built with **[babel-plugin-react-transform](https://github.com/gaearon/babel-plu
 
 ## Demo
 
-![](http://i.imgur.com/AhGY28T.gif)
+![](https://raw.githubusercontent.com/StevenIseki/redux-examples/master/redux-react-router/screenshot.png)
 
 ```
 npm install

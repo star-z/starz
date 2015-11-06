@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "redux react transform example",
   "scripts": {
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
-    "start": "node devServer.js",
+    "dist": "webpack --config webpack.config.js",
+    "build": "npm run clean && npm run dist",
+    "clean": "rm -rf public/scripts",
+    "start": "npm run start:dev",
+    "start:dev": "node serverDev.js",
+    "start:prod": "BABEL_ENV=production node server.js",
     "lint": "eslint src"
   },
   "author": "Steven Iseki <stevenisekimartin@gmail.com>",
@@ -22,7 +25,6 @@
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
     "redbox-react": "^1.0.1",
-    "rimraf": "^2.4.3",
     "webpack": "^1.9.6",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.0.0"

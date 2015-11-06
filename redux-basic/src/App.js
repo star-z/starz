@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import { Counter } from './Counter';
 import { NICE, SUPER_NICE } from './colors';
+import { Counter } from './Counter';
 
 export class App extends Component {
   render() {

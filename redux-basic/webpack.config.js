@@ -7,8 +7,8 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
+    path: path.join(__dirname, 'public/scripts'),
     publicPath: '/static/'
   },
   plugins: [
@@ -29,6 +29,12 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
+    },
+    {
+      test: /\.json$/,
+      loaders: [ 'json' ],
+      exclude: /node_modules/,
+      include: __dirname
     }]
   }
 };

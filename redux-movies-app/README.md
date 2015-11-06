@@ -1,13 +1,15 @@
-Redux React Transform Example
+Redux Movies App
 =====================
 
-* hot reloading React components
-* error handling inside component `render()` function
+- Note: This is still in progress... check back soon
+
+![](https://github.com/StevenIseki/redux-examples/public/img/airborne.png)
+
+* hot reloading React components;
+* routing with redux-router and react-router;
 * redux dev tools
 * babel-plugin-react-transform
 * webpack
-
-This example is based on gaeron's [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate)
 
 ## Run Dev
 
@@ -30,14 +32,13 @@ open http://localhost:5000
 
 ```
 {
-  "stage": 0
+  "stage": 0,
   "env": {
     "production": {
     }
   }
 }
 ```
-
 
 ## License
 

@@ -7,12 +7,33 @@ Redux React Router Example
 * babel-plugin-react-transform
 * webpack
 
-## Run
+## Run Dev
 
 ```
 npm install
 npm start
 open http://localhost:3000
+```
+
+## Run Prod
+
+```
+npm install
+npm run build
+npm start:prod
+open http://localhost:5000
+```
+
+* note: have had to modify the .babelrc to remove the hot loader for production. as follows
+
+```
+{
+  "stage": 0,
+  "env": {
+    "production": {
+    }
+  }
+}
 ```
 
 ## License

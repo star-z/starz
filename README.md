@@ -1,7 +1,5 @@
 # redux examples
 
-## Examples
-
 The redux examples are extended from the legendary work of [gaeron](https://github.com/gaearon) and [acdlite](https://github.com/acdlite)
 
 The router5 and deku examples are extended from the awesome work of [Thomas Roch](https://github.com/troch)

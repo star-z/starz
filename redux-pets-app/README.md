@@ -1,11 +1,15 @@
-Redux Pets App Example
+Redux React Router Example
 =====================
 
 * hot reloading React components;
-* routing with redux-router and react-router;
+* routing with router5;
 * redux dev tools
 * babel-plugin-react-transform
 * webpack
+
+extended from thomas roch's awesome [router5 examples](https://github.com/router5/examples)
+
+
 
 ## Run Dev
 
@@ -21,7 +25,7 @@ open http://localhost:3000
 npm install
 npm run build
 npm start:prod
-open http://localhost:5000
+open http://localhost:3000
 ```
 
 * note: have had to modify the .babelrc to remove the hot loader for production. as follows
@@ -35,6 +39,8 @@ open http://localhost:5000
   }
 }
 ```
+
+![](https://github.com/StevenIseki/redux-examples/blob/master/redux-pets-app/public/img/darkdog.png)
 
 ## License
 

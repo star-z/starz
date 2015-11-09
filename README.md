@@ -13,13 +13,10 @@ The router5 and deku examples are extended from the awesome work of [Thomas Roch
 * [redux-router5](https://github.com/StevenIseki/redux-examples/tree/master/redux-router5)
 * [redux-todo-app](https://github.com/StevenIseki/redux-examples/tree/master/redux-todo-app)
 
-TODO: set up a heap of real world example repos using redux-router
-
-* [real-world](https://github.com/StevenIseki/redux-examples/real-world)
+## Dependancies
 
 All examples are up to date with the following versions and dependancies
 
-## Dependancies
 
 `"redux": "^3.0.4"` [![npm version](https://badge.fury.io/js/redux.svg)](https://badge.fury.io/js/redux)
 

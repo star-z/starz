@@ -21,21 +21,20 @@ All examples are up to date with the following versions and dependancies
 
 ## Dependancies
 
-redux
-`"redux": "^3.0.4"`
-`"react-redux": "^4.0.0"`
+`"redux": "^3.0.4"` [![npm version](https://badge.fury.io/js/redux.svg)](https://badge.fury.io/js/redux)
 
-react
-`"react": "^0.14.0"`
-`"react-dom": "^0.14.0"`
+`"react-redux": "^4.0.0"` [![npm version](https://badge.fury.io/js/react-redux.svg)](https://badge.fury.io/js/react-redux)
 
-router5
-`router5": "1.0.0"`
-`"redux-router5": "1.0.0"`
+`"react": "^0.14.0"` [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+
+`"react-dom": "^0.14.0"` [![npm version](https://badge.fury.io/js/react-dom.svg)](https://badge.fury.io/js/react-dom)
+
+`router5": "1.0.0"` [![npm version](https://badge.fury.io/js/router5.svg)](https://badge.fury.io/js/router5)
+
+`"redux-router5": "1.0.0"` [![npm version](https://badge.fury.io/js/redux-router5.svg)](https://badge.fury.io/js/redux-router5)
   
-babel
-`"babel-core": "^5.4.7"`
-`"babel-loader": "^5.1.2"`
+`"babel-core": "^5.4.7"` [![npm version](https://badge.fury.io/js/babel-core.svg)](https://badge.fury.io/js/babel-core)
 
-webpack
-`"webpack: "^1.9.6"` [![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
+`"babel-loader": "^5.1.2"` [![npm version](https://badge.fury.io/js/babel-loader.svg)](https://badge.fury.io/js/babel-loader)
+
+webpack `"webpack: "^1.9.6"` [![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)

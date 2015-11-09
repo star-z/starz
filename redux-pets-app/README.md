@@ -1,9 +1,5 @@
-Redux Pets App
+Redux Pets App Example
 =====================
-
-- Note: This is still in progress... check back soon
-
-![](https://github.com/StevenIseki/redux-examples/public/img/darkdog.png)
 
 * hot reloading React components;
 * routing with redux-router and react-router;

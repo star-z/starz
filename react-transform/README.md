@@ -22,7 +22,7 @@ open http://localhost:3000
 npm install
 npm run build
 npm start:prod
-open http://localhost:5000
+open http://localhost:3000
 ```
 
 * note: have had to modify the .babelrc to remove the hot loader for production. as follows

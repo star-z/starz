@@ -1,7 +1,7 @@
 {
-  "name": "redux-pets-app-example",
+  "name": "redux-react-router-example",
   "version": "1.0.0",
-  "description": "redux pets app example",
+  "description": "redux react router example",
   "scripts": {
     "dist": "webpack --config webpack.config.js",
     "build": "npm run clean && npm run dist",
@@ -30,14 +30,19 @@
     "webpack-hot-middleware": "^2.0.0"
   },
   "dependencies": {
-    "history": "^1.9.0",
-    "normalizr": "^1.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.0.0",
-    "react-router": "^1.0.0-rc4",
     "redux": "^3.0.4",
+    "redux-thunk": "^1.0.0",
     "redux-devtools": "^2.1.5",
-    "redux-router": "^1.0.0-beta3"
+    "deku": "^0.5.6",
+    "lodash.find": "^3.2.1",
+    "redux-router5": "^1.0.0",
+    "reselect": "^2.0.0",
+    "react-router5": "^1.0.0",
+    "deku-router5": "^1.0.0",
+    "router5-history": "^1.0.0",
+    "router5-listeners": "^1.0.0"
   }
 }

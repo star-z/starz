@@ -2,10 +2,12 @@ Redux React Router Example
 =====================
 
 * hot reloading React components;
-* routing with redux-router and react-router;
+* routing with router5;
 * redux dev tools
 * babel-plugin-react-transform
 * webpack
+
+extended from thomas roch's awesome [router5 examples](https://github.com/router5/examples)
 
 ## Run Dev
 

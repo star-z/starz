@@ -10,6 +10,7 @@ The router5 and deku examples are extended from the awesome work of [Thomas Roch
 * [redux-react-router](https://github.com/StevenIseki/redux-examples/redux-react-router)
 * [redux-router5](https://github.com/StevenIseki/redux-examples/tree/master/redux-router5)
 * [redux-todo-app](https://github.com/StevenIseki/redux-examples/tree/master/redux-todo-app)
+* [redux-deku](https://github.com/StevenIseki/redux-examples/tree/master/redux-deku)
 
 ## Dependancies
 

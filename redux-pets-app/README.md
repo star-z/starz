@@ -1,4 +1,4 @@
-Redux React Router Example
+Redux Pets App Example
 =====================
 
 * hot reloading React components;
@@ -8,8 +8,6 @@ Redux React Router Example
 * webpack
 
 extended from thomas roch's awesome [router5 examples](https://github.com/router5/examples)
-
-
 
 ## Run Dev
 

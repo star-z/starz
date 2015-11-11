@@ -1,10 +1,8 @@
-Redux Router5 Example
+Redux Deku Example
 =====================
 
 * routing with router5;
-* hot reloading React components;
 * redux dev tools
-* babel-plugin-react-transform
 * webpack
 
 extended from thomas roch's awesome [router5 examples](https://github.com/router5/examples)

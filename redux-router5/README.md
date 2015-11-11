@@ -26,18 +26,6 @@ npm start:prod
 open http://localhost:3000
 ```
 
-* note: have had to modify the .babelrc to remove the hot loader for production. as follows
-
-```
-{
-  "stage": 0,
-  "env": {
-    "production": {
-    }
-  }
-}
-```
-
 ## License
 
 [MIT](http://isekivacenz.mit-license.org/)

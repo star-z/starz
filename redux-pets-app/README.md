@@ -26,18 +26,6 @@ npm start:prod
 open http://localhost:3000
 ```
 
-* note: have had to modify the .babelrc to remove the hot loader for production. as follows
-
-```
-{
-  "stage": 0,
-  "env": {
-    "production": {
-    }
-  }
-}
-```
-
 ![](https://github.com/StevenIseki/redux-examples/blob/master/redux-pets-app/public/img/darkdog.png)
 
 ## License

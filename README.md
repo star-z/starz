@@ -52,7 +52,6 @@ These examples have the following versions for dependancies
     "express": "^4.13.3",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
-    "style-loader": "^0.12.3",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-transform-hmr": "^1.0.0",

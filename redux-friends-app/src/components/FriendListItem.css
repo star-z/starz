@@ -1,0 +1,31 @@
+.friendListItem {
+  list-style: none;
+  padding: 20px 10px 20px 20px;
+  background-color: white;
+  border-bottom: 1px solid #E3E3E3;
+  display: flex;
+}
+
+.friendInfos {
+  flex: 1 0 auto;
+}
+
+.friendInfos span {
+  font-weight: bold;
+}
+
+.friendActions {
+  flex: 0 0 90px;
+}
+
+.btn-default, 
+.btn-default:active, 
+.btn-default:focus, 
+.btn-default:hover {
+  margin-right: 5px;
+  color: #5C75B0;
+}
+
+button:focus {
+  outline: 0 !important;
+}

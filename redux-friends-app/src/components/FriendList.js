@@ -1,19 +1,22 @@
 import React from 'react';
-import MovieView from '../components/MovieView';
+import FriendListItem from '../components/FriendListItem';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actions } from 'redux-router5';
+import styles from './FriendList.css';
 
 import * as FriendsActions from '../actions/FriendsActions';
 
-function MovieList({ friends, addFriend }) {
+function FriendList(props) {
     return (
-        <ul>
+        <ul className="friendList">
             { 
-            	friends.map(
-            		movie => <MovieView {...movie} 
-            						 key={movie.id} 
-            						 onClick={ () => addFriend('my man') } />
+            	props.friends.map(
+            		friend => <FriendListItem {...friend} 
+            						 key={friend.id} 
+            						 deleteFriend={ () => props.deleteFriend(friend.id) } 
+                                     starFriend={ () => props.starFriend(friend.id) } 
+                                />
             	) 
         	}
         </ul>
@@ -22,5 +25,5 @@ function MovieList({ friends, addFriend }) {
 
 export default connect(
     state => ({ friends: state.friendlist.friends }),
-    dispatch => bindActionCreators({ addFriend: FriendsActions.addFriend, navigateTo: actions.navigateTo }, dispatch)
-)(MovieList);
+    dispatch => bindActionCreators(FriendsActions, dispatch)
+)(FriendList);

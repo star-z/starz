@@ -6,7 +6,7 @@ import FriendListContainer from './FriendListContainer';
 import NotFound from '../components/NotFound';
 
 const components = {
-    'movie':   FriendListContainer
+    'friends':   FriendListContainer
 };
 
 function Main(props) {

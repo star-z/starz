@@ -5,14 +5,14 @@ body {
   justify-content: center;
 }
 
-:local(.friendListApp) {
+.friendListApp {
   width: 300px;
   padding-top: 18px;
   background-color: #5C75B0;
   border: 1px solid #E3E3E3;
 }
 
-:local(.friendListApp h1) {
+.friendListApp h1 {
   color: white;
   font-size: 16px;
   line-height: 20px;

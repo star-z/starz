@@ -1,27 +1,34 @@
 import React from 'react';
 import styles from './FriendListContainer.css';
+import AddFriendInput from '../components/AddFriendInput';
 import FriendList from '../components/FriendList';
-import FriendDetailView from './FriendDetailView';
 import { connect } from 'react-redux';
 import { routeNodeSelector } from 'redux-router5';
+import { bindActionCreators } from 'redux';
+import * as FriendsActions from '../actions/FriendsActions';
 
-function FriendListContainer(props) {
+function FriendListContainer( props) {
+
+    console.log(props)
+
     const { route } = props;
 
-    // maybe for showing friends more details... to show off routing
-    let friendDetailView = null;
-
-    if(route.name === 'movie.detail'){
-    	friendDetailView = <FriendDetailView id={ route.params.id } key={ route.params.id } />
+    const actions = {
+        addFriend: props.addFriend,
+        deleteFriend: props.deleteFriend,
+        starFriend: props.starFriend
     }
 
     return (
-        <div className={styles.friendListApp}>
+        <div className="friendListApp">
             <h1>The FriendList</h1>
-            <FriendList />
-            { friendDetailView }
+            <AddFriendInput addFriend={props.addFriend} />
+            <FriendList actions={actions} />
         </div>
     );
 }
 
-export default connect(routeNodeSelector('movie'))(FriendListContainer);
+export default connect(
+    routeNodeSelector('friends'),
+    dispatch => bindActionCreators(FriendsActions, dispatch)
+)(FriendListContainer);

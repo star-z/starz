@@ -9,8 +9,6 @@ import * as FriendsActions from '../actions/FriendsActions';
 
 function FriendListContainer( props) {
 
-    console.log(props)
-
     const { route } = props;
 
     const actions = {

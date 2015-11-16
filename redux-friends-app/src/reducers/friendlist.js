@@ -5,17 +5,17 @@ const initialState = {
   friends: [ 
     {
       id: 1,
-      name: 'Theodore Roosevelt',
+      name: 'Brian Lara',
       starred: false
     },
     {
       id: 2,
-      name: 'Abraham Lincoln',
+      name: 'Sachin Tendulkar',
       starred: false
     },
     {
       id: 3,
-      name: 'George Washington',
+      name: 'Ricky Ponting',
       starred: false
     }
   ]

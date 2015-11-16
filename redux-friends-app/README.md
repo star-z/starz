@@ -1,9 +1,9 @@
 Redux Friends App Example
 =====================
 
-* routing with router5;
-* webpack
+* redux, webpack, react, router5
 * styling with css-loader and post-css
+* Check out this [example](https://github.com/StevenIseki/webpack-css-loader-examples/tree/master/redux-react) for a css module version.
 
 extended Jérôme Chapron's awesome [friendlist example](https://github.com/jchapron/redux-friendlist-demo) to use router5
 

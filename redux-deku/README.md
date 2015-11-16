@@ -25,6 +25,8 @@ npm start:prod
 open http://localhost:3000
 ```
 
+![](https://raw.githubusercontent.com/StevenIseki/redux-examples/master/redux-deku/public/img/screenshot.png)
+
 ## License
 
 [MIT](http://isekivacenz.mit-license.org/)

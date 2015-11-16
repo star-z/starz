@@ -1,7 +1,8 @@
 Redux Deku Example
 =====================
 
-* routing with router5;
+* routing with router5
+* deku for UI components
 * redux dev tools
 * webpack
 

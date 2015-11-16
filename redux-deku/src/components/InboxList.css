@@ -1,0 +1,37 @@
+.inboxList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.inboxList > li {
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.inboxList > li:hover {
+    background-color: #eee;
+}
+
+.inboxList > li > h4 {
+    padding: .5rem 1rem 0;
+    margin: 0;
+}
+
+.inboxList > li > p {
+    margin: 0;
+    padding: 0 1rem .5rem;
+    line-height: 1.5em;
+    font-size: 0.85rem;
+}
+
+.inboxList > li > h4,
+.inboxList > li > p {
+    overflow: hidden;
+    width: calc(100% - 2rem);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

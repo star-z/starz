@@ -1,0 +1,18 @@
+.message {
+    border-left: 2px solid #ddd;
+    overflow: auto;
+    flex: 2;
+}
+
+.message > h4 {
+    padding: 1rem 1rem 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.message > p {
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5em;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,31 @@
+.compose {
+    padding: 0 1rem;
+}
+
+.compose > h4 {
+    padding: .5rem 0;
+    margin: 0;
+}
+
+.compose > input,
+.compose > textarea {
+    padding: .5rem;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+.compose > textarea {
+    min-height: 200px;
+}
+
+.compose > p {
+    color: red;
+    margin: 0;
+    padding: .5rem 0;
+    line-height: 1.5em;
+    font-size: 0.9rem;
+}

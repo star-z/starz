@@ -1,8 +1,9 @@
 import element from 'virtual-element';
-import { routeNode } from 'deku-router5';
 import Inbox from './Inbox';
 import Compose from './Compose';
 import NotFound from './NotFound';
+import { connect } from 'deku-redux';
+import { routeNodeSelector } from 'redux-router5';
 
 const components = {
     'inbox':   Inbox,
@@ -18,4 +19,4 @@ const Main = {
     }
 };
 
-export default routeNode('')(Main);
+export default connect(routeNodeSelector(''))(Main);

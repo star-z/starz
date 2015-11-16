@@ -1,0 +1,76 @@
+html {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-family: sans-serif, Arial;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    margin: 40px auto;
+    max-width: 1050px;
+}
+
+.mailClient {
+    widht: 100%;
+    height: 450px;
+    background-color: #f4f4f4;
+    position: relative;
+    border: 1px solid #CCC;
+}
+
+.mailClient > aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.mailClient > main {
+    position: absolute;
+    top: 46px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.mailClient > aside > nav > a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: #336699;
+}
+
+.mailClient > aside > nav > a.active {
+    background-color: #336699;
+    color: white;
+}
+
+
+
+@media (min-width: 1025px) {
+    .mailClient > aside {
+        height: auto;
+        top: 0;
+        width: 150px;
+        bottom: 0;
+        left: 0;
+        border-bottom: none;
+        border-right: 1px solid #ccc;
+    }
+
+    .mailClient > main {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 151px;
+    }
+
+    .mailClient > aside > nav > a {
+        display: block;
+    }
+}

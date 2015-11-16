@@ -1,7 +1,8 @@
 import element from 'virtual-element';
 import InboxList from './InboxList';
 import Message from './Message';
-import { routeNode } from 'deku-router5';
+import { connect } from 'deku-redux';
+import { routeNodeSelector } from 'redux-router5';
 import { getEmails } from '../api';
 
 const Inbox = {
@@ -16,4 +17,4 @@ const Inbox = {
     }
 };
 
-export default routeNode('inbox')(Inbox);
+export default connect(routeNodeSelector('inbox'))(Inbox);

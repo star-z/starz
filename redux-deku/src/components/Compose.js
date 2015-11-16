@@ -1,23 +1,45 @@
 import element from 'virtual-element';
-import { routeNode } from 'deku-router5';
+import { connect } from 'deku-redux';
+import { createSelector } from 'reselect';
+import { updateTitle, updateMessage } from '../actions/draft';
+import styles from './Compose.css';
+
+const draftSelector = createSelector(
+    state => state.draft,
+    state => state.router,
+    (draft, router) => ({
+        title: draft.title,
+        message: draft.message,
+        error: hasCannotDeactivateError(router.transitionError)
+    })
+);
+
+function hasCannotDeactivateError(error) {
+    return error && error.code === 'CANNOT_DEACTIVATE' && error.segment === 'compose';
+}
 
 const Compose = {
+    propTypes: {
+        router: { source: 'router' }
+    },
+
     intitalState(props) {
         return { title: '', message: '' };
     },
 
-    render({ state }, setState) {
-        const { title, message } = state;
+    render({ state, props }, setState) {
+        const { title, message, error, updateTitle, updateMessage, router } = props;
 
         const updateState = prop => evt => setState(prop, evt.target.value);
+        router.canDeactivate('compose', !title && !message);
 
-        return element('div', { class: 'compose' }, [
+        return element('div', { class: styles.compose }, [
             element('h4', {}, 'Compose a new message'),
             element('input', { name: 'title', value: title, onChange: updateState('title') }),
-            element('textarea', { name: 'message', value: message, onChange: updateState('message') })
+            element('textarea', { name: 'message', value: message, onChange: updateState('message') }),
+            error ? element('p', {}, 'Clear inputs before continuing') : null
         ]);
-        // { warning ? <p>Clear inputs before continuing</p> : null }
     }
 };
 
-export default routeNode('compose')(Compose);
+export default connect(draftSelector, { updateTitle, updateMessage })(Compose);

@@ -5,7 +5,7 @@ Redux Friends App Example
 * webpack
 * styling with css-loader and post-css
 
-extended from thomas roch's awesome [router5 examples](https://github.com/router5/examples)
+extended Jérôme Chapron's awesome [friendlist example](https://github.com/jchapron/redux-friendlist-demo) to use router5
 
 ## Run Dev
 

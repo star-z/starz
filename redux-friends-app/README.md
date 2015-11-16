@@ -24,7 +24,7 @@ npm start:prod
 open http://localhost:3000
 ```
 
-![](https://github.com/StevenIseki/redux-examples/blob/master/redux-movie-app/public/img/airborne.jpg)
+![](https://raw.githubusercontent.com/StevenIseki/redux-examples/master/redux-friends-app/public/screenshot.png)
 
 ## License
 

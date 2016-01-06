@@ -28,6 +28,9 @@ react-redux
 [![npm version](https://badge.fury.io/js/redux-router5.svg)](https://badge.fury.io/js/redux-router5)
 redux-router5
 
+[![npm version](https://badge.fury.io/js/redux-simple-router.svg)](https://badge.fury.io/js/redux-simple-router)
+redux-simple-router
+
 [![npm version](https://badge.fury.io/js/babel-core.svg)](https://badge.fury.io/js/babel-core)
 babel-core
 
@@ -43,7 +46,7 @@ router5
 [![npm version](https://badge.fury.io/js/deku.svg)](https://badge.fury.io/js/deku)
 deku
 
-These examples have the following versions for dependancies
+These examples have the following versions for dependencies
 
 ```json
 "devDependencies": {
@@ -57,6 +60,7 @@ These examples have the following versions for dependancies
     "react-transform-hmr": "^1.0.0",
     "react-redux": "^4.0.0",
     "react-router5": "^1.0.0",
+    "redux-simple-router": "^1.0.2",
     "redux": "^3.0.4",
     "redux-thunk": "^1.0.0",
     "redux-devtools": "^2.1.5",

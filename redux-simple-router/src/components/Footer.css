@@ -1,0 +1,42 @@
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 70px;
+  padding-top: 30px;
+  background-color: #444;
+  text-align: center;
+  font-size: 24px;
+}
+
+.footer span {
+  color: #fff;
+}
+
+.heart{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    background-color: #61dafb;
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border-radius: 50%;
+    background-color: #61dafb;
+}
+.heart:before{
+    bottom: 0px;
+    left: -10px;
+}
+.heart:after{
+    top: -10px;
+    right: 0px;
+}

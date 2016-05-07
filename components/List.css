@@ -1,0 +1,14 @@
+.List {
+  padding: 2rem;
+  min-height: 80rem;
+}
+
+@media (max-width: 768px) {
+  .List { padding: 0; }
+}
+
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}

@@ -1,0 +1,83 @@
+.Card {
+  width: 20%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1920px) {
+  .Card { width: 25%; }
+}
+
+@media (max-width: 1600px) {
+  .Card { width: 33%; }
+}
+
+@media (max-width: 1280px) {
+  .Card { width: 50%; }
+}
+
+@media (max-width: 960px) {
+  .Card { width: 100%; }
+}
+
+.Inner {
+  position: relative;
+  flex: 1;
+  height: 31rem;
+  overflow: hidden;
+}
+
+.Details {
+  max-height: 14rem;
+  overflow: hidden;
+  padding: 2rem 2.5rem 0rem;
+  padding-top: 0rem;
+}
+
+
+.Meta {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.Category {
+  display: inline-block;
+}
+
+.Review {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 1rem 2.5rem 0rem;
+  position: relative;
+  top: 0px;
+}
+
+.Title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  overflow: hidden;
+  max-height: 30rem;
+  transition: 300ms max-height;
+}
+
+.Avatar {
+  background-image: url('http://design-inform.com/lalala/uploads/5a9b8fc0fa5b28c975aa35bbe5ced91c.jpg');
+  float: left;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-size: 420%;
+  background-position-x: -11px;
+  background-position-y: -11px;
+}

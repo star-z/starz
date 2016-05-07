@@ -1,16 +1,8 @@
-# redux examples
+# reterrn
 
-The redux examples are extended from the legendary work of [gaeron](https://github.com/gaearon) and [acdlite](https://github.com/acdlite)
+Movie Flix is a simple app built with Redux, Enzyme, Tape, Expect, React and Normalizr.
 
-The router5 and deku examples are extended from the awesome work of [Thomas Roch](https://github.com/troch)
-
-* [react-transform](https://github.com/StevenIseki/redux-examples/tree/master/react-transform)
-* [redux-basic](https://github.com/StevenIseki/redux-examples/redux-basic)
-* [redux-pets-app](https://github.com/StevenIseki/redux-examples/tree/master/redux-pets-app)
-* [redux-react-router](https://github.com/StevenIseki/redux-examples/redux-react-router)
-* [redux-router5](https://github.com/StevenIseki/redux-examples/tree/master/redux-router5)
-* [redux-todo-app](https://github.com/StevenIseki/redux-examples/tree/master/redux-todo-app)
-* [redux-deku](https://github.com/StevenIseki/redux-examples/tree/master/redux-deku)
+Some other libraries also used which didn't fit into a cool acronym were Reselect, of course Webpack and Babel, SuperAgent, Express, and a fair few more...
 
 ## Dependancies
 
@@ -38,10 +30,10 @@ babel-core
 babel-loader
 
 [![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
-webpack 
+webpack
 
 [![npm version](https://badge.fury.io/js/router5.svg)](https://badge.fury.io/js/router5)
-router5 
+router5
 
 [![npm version](https://badge.fury.io/js/deku.svg)](https://badge.fury.io/js/deku)
 deku

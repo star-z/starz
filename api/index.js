@@ -2,6 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 router.route('/movies').get(require('./routes/movies'));
+router.route('/tv').get(require('./routes/tv'));
 router.route('/reviews').get(require('./routes/reviews'));
+router.route('/saved').get(require('./routes/saved'));
+
+router.route('/save').post(require('./routes/save'));
+
 
 module.exports = router;

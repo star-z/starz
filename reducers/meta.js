@@ -1,5 +1,6 @@
 import * as constants from '../constants'
 const initialState = {
+  seriesMeta: [],
   moviesMeta: [],
   reviewsMeta: []
 }

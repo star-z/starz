@@ -15,6 +15,7 @@ export default class SiteSidebar extends Component {
 
     const links = [
       { to: '/movies', text: 'Movies', fetching: fetching['movies'] },
+      { to: '/series', text: 'Series', fetching: fetching['series'] },
       { to: '/reviews', text: 'Reviews', fetching: fetching['reviews'] }
     ]
 

@@ -5,6 +5,7 @@ import each from 'lodash/each'
 
 const initialState = {
   movies: {},
+  series: {},
   users: {},
   reviews: {}
 }

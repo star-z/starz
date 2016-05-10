@@ -5,5 +5,6 @@ export function init(dispatch) {
   return dispatch => {
     dispatch(actions.fetchReviews())
     dispatch(actions.fetchMovies())
+    dispatch(actions.fetchSeries())
   }
 }

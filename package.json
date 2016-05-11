@@ -1,7 +1,7 @@
 {
-  "name": "movie-flix",
+  "name": "flixy",
   "version": "0.0.1",
-  "description": "Movie Flix app",
+  "description": "Flixy app",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base public/ --port 5050 --inline --hot",

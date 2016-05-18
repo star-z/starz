@@ -1,8 +1,6 @@
 # [flixz](#)
 
-A simple app built with Redux, Enzyme, Tape, Expect, React and Normalizr.
-
-Some other libraries also used which didn't fit into a cool acronym were Reselect, of course Webpack and Babel, SuperAgent, Express, and a fair few more...
+A simple app built with Redux, Enzyme, Tape, Expect, React and Normalizr, Express and a few more cool things...
 
 ## Dependancies
 

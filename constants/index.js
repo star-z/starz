@@ -1,5 +1,0 @@
-export const INIT = 'INIT'
-
-export const RECEIVE_FETCHING = 'RECEIVE_FETCHING'
-export const RECEIVE_META = 'RECEIVE_META'
-export const RECEIVE_ENTITIES = 'RECEIVE_ENTITIES'

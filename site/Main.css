@@ -1,0 +1,164 @@
+.thumb_tags {
+	color: #bbb;
+	line-height: 20px;
+	margin: 0 0 2px 0;
+	text-align: center;
+}
+
+.thumb_tags a {
+	color: #bbb;
+	font-size: 12px;
+	line-height: 1.5em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.thumb_tags a:hover {
+	text-decoration: underline;
+}
+
+.thumb_tags a:active {
+	color: #ccc;
+}
+
+.thumb_tags span:after {
+	content: ","
+}
+
+.thumb_tags span:last-child:after {
+	content: "";
+}
+
+
+.github {
+	color: #999999;
+	margin-top: 0;
+}
+
+.github a {
+	color: #999999;
+}
+
+.github a:hover {
+	color: #333333;
+	text-decoration: underline;
+}
+
+.github a:active {
+	background: #333333;
+	color: #ffffff;
+}
+
+
+.link a {
+	color: #333333;
+}
+
+.link a.hover,
+.link a:hover {
+	background: #ffff00;
+	color: #333333;
+}
+
+.active a {
+	background: #ffff00 !important;
+}
+
+.project {
+	display: none;
+	max-width: 670px;
+}
+
+.container {
+	margin: 115px 70px 35px 270px;
+	position: relative;
+	padding-bottom: 70px;
+}
+
+
+.navigation {
+	line-height: 1.8em;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 40px;
+	z-index: 12;
+	left: 35px;
+	top: 115px;
+	position: fixed;
+	width: 200px;
+	z-index: 9;
+}
+
+.navigation.fixed {
+	position: fixed;
+}
+
+.navigation.scroll {
+	position: absolute;
+}
+
+.navigation li {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.navigation a,
+.navigation span {
+	text-decoration: none;
+	padding: 2px 3px 2px 3px;
+}
+
+.navigation li.active a {
+	background: #ccffcc;
+	color: #333333;
+}
+
+.list {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.list li {
+	list-style: none;
+}
+
+.list li ul {
+	padding-left: 0px;
+}
+
+
+.site_header {
+	position: fixed;
+	top: 35px;
+	left: 35px;
+	z-index: 999;
+}
+
+.header_text {
+	font-size: 28px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	position: absolute;
+	top: -10px;
+	white-space: nowrap;
+	padding: 2px 3px 2px 3px;
+	z-index: 999;
+}
+
+.header_text a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.header_text a:hover {
+	color: #000;
+	border-bottom: 0;
+}
+
+.header_text a:active {
+	color: #999;
+	border-bottom: 0;
+}

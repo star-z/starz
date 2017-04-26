@@ -6,12 +6,14 @@ import {
   Link
 } from 'react-router-dom'
 
+import Autocomplete from './Pages/Autocomplete'
 import Search from './Pages/Search'
 import Gallery from './Pages/Gallery'
 import Button from './Pages/Button'
 import Modal from './Pages/Modal'
 import Swipe from './Pages/Swipe'
 import Embed from './Pages/Embed'
+import Toggle from './Pages/Toggle'
 
 import styles from './Main.css'
 
@@ -46,7 +48,12 @@ export default class Projects extends Component {
                 </Link>
               </li>
               <li styleName='link'>
-                <Link to='/search'>
+                <Link to='/autocomplete'>
+                  Autocomplete
+                </Link>
+              </li>
+              <li styleName='link'>
+                <Link to='/select'>
                   Search
                 </Link>
               </li>
@@ -81,7 +88,9 @@ export default class Projects extends Component {
       	<div styleName='container'>
       		<div styleName='project' style={{display: 'block'}}>
               <div>
-                <Route exact path="/" component={Embed} />
+                <Route exact path="/" component={Toggle} />
+                <Route exact path="/embed" component={Embed} />
+                <Route exact path="/autocomplete" component={Autocomplete} />
                 <Route exact path="/search" component={Search} />
                 <Route path="/gallery" component={Gallery} />
                 <Route path="/button" component={Button} />

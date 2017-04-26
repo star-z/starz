@@ -2,12 +2,12 @@
   "name": "starjs",
   "version": "1.0.0",
   "description": "Website for seavae",
-  "main": "site/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "site": "npm run clean && npm run css && NODE_ENV=prod webpack --config site/webpack.config.prod",
-    "css": "cp -r site/styles/*.css site/public",
+    "site": "npm run clean && npm run css && NODE_ENV=prod webpack --config src/webpack.config.prod",
+    "css": "cp -r src/styles/*.css src/public",
     "clean": "rm public/bundle.js && rm public/style.css && rm public/vendor.js || true",
-    "dev": "NODE_ENV=dev webpack-dev-server --port 3000 --inline --hot --config site/webpack.config"
+    "dev": "NODE_ENV=dev webpack-dev-server --port 3000 --inline --hot --config src/webpack.config"
   },
   "standard": {
     "parser": "babel-eslint"

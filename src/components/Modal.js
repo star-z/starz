@@ -1,15 +1,13 @@
 import React, { PropTypes } from 'react'
 import ReactDOM from 'react-dom'
-import CSSModules from 'react-css-modules'
+import styled from 'styled-components'
 
-import styles from './Modal.css'
-
-@CSSModules(styles, { allowMultiple: true })
-export default class Modal extends React.Component {
+export default class extends React.Component {
   static get defaultProps () {
     return {
       type: 'notice',
-      message: null
+      message: null,
+      closable: true
     }
   }
 
@@ -90,27 +88,69 @@ export default class Modal extends React.Component {
 
   render() {
     const { visible } = this.state
-    let closeBtn = (
-      <div styleName='overlayCloseWrapper'>
-        <div styleName='overlayClose' title='Close'
-             onClick={this.handleCloseBtnClick.bind(this)}>
-          &times;
-        </div>
-      </div>
-    )
-    if (this.props.closable === false) {
-      closeBtn = (<div></div>)
-    }
-    let closeClass = `overlay ${visible ? '' : ' hidden'}`
 
     return (
-      <div ref='overlay' styleName={closeClass}
-           onClick={this.handleOverlayClick.bind(this)}>
-        <div styleName='overlayContent'>
-          {closeBtn}
+      <Overlay
+        ref='overlay'
+        visible={visible}
+        onClick={::this.handleOverlayClick}>
+        <OverlayContent>
+          {
+            this.props.closable && (
+              <CloseWrapper>
+                <Close onClick={::this.handleCloseBtnClick}>&times;</Close>
+              </CloseWrapper>
+            )
+          }
           {this.props.children}
-        </div>
-      </div>
+        </OverlayContent>
+      </Overlay>
     )
   }
 }
+
+const Overlay = styled.div`
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  color: #272b34;
+  font-size: 1rem;
+  z-index: 200;
+  display: ${props => props.visible ? 'block' : 'none'}
+`
+
+const OverlayContent = styled.div`
+  background-color: #fff;
+  box-shadow: 0.1rem 0.1rem 3rem rgba(0, 0, 0, 0.25);
+  box-sizing: content-box;
+  margin-bottom: 4%;
+  margin: 0 auto;
+  padding: 10 20px;
+  position: relative;
+  top: 25vh;
+  max-width: 60%;
+  min-height: 20vw;
+`
+
+const  CloseWrapper = styled.div`
+  box-sizing: content-box;
+  position: relative;
+`
+
+const Close = styled.div`
+  box-sizing: content-box;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 auto;
+  right: 10px;
+  text-align: right;
+`

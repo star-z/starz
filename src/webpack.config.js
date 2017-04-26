@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const autoprefixer = require('autoprefixer')
 
 module.exports = {
-  entry: './site/index.js',
+  entry: './src/index.js',
   devtool: 'inline-source-map',
   output: { filename: 'bundle.js', publicPath: '' },
   resolve: {
@@ -27,7 +27,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'starjs', template: './site/index.html' }),
+    new HtmlWebpackPlugin({ title: 'starjs', template: './src/index.html' }),
     new webpack.LoaderOptionsPlugin({ options: { postcss: [ autoprefixer ] } })
   ],
 }

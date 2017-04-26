@@ -1,34 +1,3 @@
-.thumb_tags {
-	color: #bbb;
-	line-height: 20px;
-	margin: 0 0 2px 0;
-	text-align: center;
-}
-
-.thumb_tags a {
-	color: #bbb;
-	font-size: 12px;
-	line-height: 1.5em;
-	text-align: center;
-	text-decoration: none;
-}
-
-.thumb_tags a:hover {
-	text-decoration: underline;
-}
-
-.thumb_tags a:active {
-	color: #ccc;
-}
-
-.thumb_tags span:after {
-	content: ","
-}
-
-.thumb_tags span:last-child:after {
-	content: "";
-}
-
 
 .github {
 	color: #999999;
@@ -75,6 +44,12 @@
 	padding-bottom: 70px;
 }
 
+@media (max-width: 768px) {
+  .container {
+  	margin: 40px;
+  }
+}
+
 
 .navigation {
 	line-height: 1.8em;
@@ -92,6 +67,14 @@
 
 .navigation.fixed {
 	position: fixed;
+}
+
+@media (max-width: 768px) {
+  .navigation.fixed {
+  	position: static;
+    margin: 20px 40px;
+    padding: 0;
+  }
 }
 
 .navigation.scroll {
@@ -137,6 +120,13 @@
 	z-index: 999;
 }
 
+@media (max-width: 768px) {
+  .site_header {
+    position: static;
+    margin: 10px 40px;
+  }
+}
+
 .header_text {
 	font-size: 28px;
 	font-weight: normal;
@@ -146,6 +136,14 @@
 	white-space: nowrap;
 	padding: 2px 3px 2px 3px;
 	z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .header_text {
+    position: static;
+    padding: 0;
+  }
+
 }
 
 .header_text a {

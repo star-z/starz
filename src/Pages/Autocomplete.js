@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Search'
+import ExampleCode from '!!../prism-loader?language=javascript!../components/Autocomplete'
 import Code from '../Code'
-import Search from '../components/Search'
+import Autocomplete from '../components/Autocomplete'
 
-let items = [ { id: 0, value: 'ruby' }, { id: 1, value: 'javascript' }, { id: 2, value: 'lua' } ]
+let items = ['ruby', 'javascript', 'lua', 'go', 'c++', 'julia', 'java', 'c', 'scala','haskell']
 
 export default class extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class extends Component {
           <br />
           <Code code={`yarn add star-search\nimport Search from 'star-search'`} />
         </div>
-        <Search items={items} />
+        <Autocomplete items={items} />
         <Code code={ExampleCode} />
 			</div>
     )

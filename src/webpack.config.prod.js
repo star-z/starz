@@ -37,7 +37,7 @@ function loaders() {
 
 function entry() {
   return {
-    app: './site/index',
+    app: './src/index',
     vendor: [ 'react', 'react-dom']
   }
 }

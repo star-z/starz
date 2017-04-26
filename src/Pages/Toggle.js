@@ -14,9 +14,9 @@ export default class extends Component {
     return (
 			<div className='wrapper'>
         <div style={{margin: '20px 0'}}>
-          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Search component</span>
+          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Toggle component</span>
           <br />
-          <Code code={`yarn add star-search\nimport Search from 'star-search'`} />
+          <Code code={`yarn add star-toggle\nimport Search from 'star-toggle'`} />
         </div>
         <Toggle
           items={items}

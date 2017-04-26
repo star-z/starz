@@ -11,7 +11,7 @@ export default class extends Component {
     return (
 			<div className='wrapper'>
         <div style={{margin: '20px 0'}}>
-          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Search component</span>
+          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Autocomplete component</span>
           <br />
           <Code code={`yarn add star-autocomplete\nimport Search from 'star-autocomplete'`} />
         </div>

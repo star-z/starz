@@ -12,9 +12,9 @@ export default class extends Component {
     return (
       <div>
         <div style={{margin: '20px 0'}}>
-          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Modal component</span>
+          <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Sortable List component</span>
           <br />
-          <Code code={`yarn add star-modal\nimport Modal from 'star-modal'`} />
+          <Code code={`yarn add star-sortable-list\nimport Modal from 'star-sortable-list'`} />
         </div>
 
         <div style={{margin: '20px 0'}}>

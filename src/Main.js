@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom'
 
 import Autocomplete from './Pages/Autocomplete'
+import SortableList from './Pages/SortableList'
+import Dropdown from './Pages/Dropdown'
 import Search from './Pages/Search'
 import Gallery from './Pages/Gallery'
 import Button from './Pages/Button'
@@ -44,7 +46,22 @@ export default class Projects extends Component {
       			<ul styleName='list'>
               <li styleName='link active'>
                 <Link to='/'>
+                  SortableList
+                </Link>
+              </li>
+              <li styleName='link'>
+                <Link to='/toggle'>
+                  Toggle
+                </Link>
+              </li>
+              <li styleName='link'>
+                <Link to='/embed'>
                   Embed
+                </Link>
+              </li>
+              <li styleName='link'>
+                <Link to='/dropdown'>
+                  Dropdown
                 </Link>
               </li>
               <li styleName='link'>
@@ -88,7 +105,9 @@ export default class Projects extends Component {
       	<div styleName='container'>
       		<div styleName='project' style={{display: 'block'}}>
               <div>
-                <Route exact path="/" component={Toggle} />
+                <Route exact path="/" component={SortableList} />
+                <Route exact path="/toggle" component={Toggle} />
+                <Route exact path="/dropdown" component={Dropdown} />
                 <Route exact path="/embed" component={Embed} />
                 <Route exact path="/autocomplete" component={Autocomplete} />
                 <Route exact path="/search" component={Search} />

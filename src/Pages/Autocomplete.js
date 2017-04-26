@@ -13,7 +13,7 @@ export default class extends Component {
         <div style={{margin: '20px 0'}}>
           <span style={{fontSize: '26px', fontStyle: 'italic'}}>Star Search component</span>
           <br />
-          <Code code={`yarn add star-search\nimport Search from 'star-search'`} />
+          <Code code={`yarn add star-autocomplete\nimport Search from 'star-autocomplete'`} />
         </div>
         <Autocomplete items={items} />
         <Code code={ExampleCode} />

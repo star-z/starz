@@ -70,7 +70,7 @@ export default class Projects extends Component {
                 </Link>
               </li>
               <li styleName='link'>
-                <Link to='/select'>
+                <Link to='/search'>
                   Search
                 </Link>
               </li>

@@ -6,6 +6,7 @@ import {
   Link
 } from 'react-router-dom'
 
+/* web */
 import Autocomplete from './Pages/web/Autocomplete'
 import SortableList from './Pages/web/SortableList'
 import Dropdown from './Pages/web/Dropdown'
@@ -17,15 +18,13 @@ import Swipe from './Pages/web/Swipe'
 import Embed from './Pages/web/Embed'
 import Toggle from './Pages/web/Toggle'
 
-import Tabs from './Pages/native/Tabs'
+/* native */
+import TabsNative from './Pages/native/Tabs'
+import SearchNative from './Pages/native/Search'
+import EmojiPickerNative from './Pages/native/EmojiPicker'
 
 import styles from './Main.css'
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
 
 @CSSModules(styles, { allowMultiple: true })
 export default class Projects extends Component {
@@ -113,6 +112,20 @@ export default class Projects extends Component {
                 </Link>
         			</li>
         		</ul>
+            <ul styleName='list'>
+              <li styleName='link'>
+                <Link to='/native-search'>
+                  Search
+                </Link>
+        			</li>
+        		</ul>
+            <ul styleName='list'>
+              <li styleName='link'>
+                <Link to='/native-emojipicker'>
+                  EmojiPickerNative
+                </Link>
+        			</li>
+        		</ul>
       		</div>
 
       		<div styleName='github'>
@@ -134,7 +147,9 @@ export default class Projects extends Component {
                 <Route path="/button" component={Button} />
                 <Route path="/modal" component={Modal} />
                 <Route path="/swipe" component={Swipe} />
-                <Route exact path="/native-tabs" component={Tabs} />
+                <Route exact path="/native-tabs" component={TabsNative} />
+                <Route exact path="/native-search" component={SearchNative} />
+                <Route exact path="/native-emojipicker" component={EmojiPickerNative} />
               </div>
       		</div>
       	</div>

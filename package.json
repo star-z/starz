@@ -43,8 +43,8 @@
     "react-native-web": "^0.0.109",
     "react-router-dom": "^4.1.1",
     "style-loader": "^0.13.1",
-    "styled-components": "^1.4.4",
-    "webpack": "2.1.0-beta.27",
+    "styled-components": "^2.1.1",
+    "webpack": "2.5.1",
     "webpack-dev-server": "2.1.0-beta.12"
   },
   "keywords": [

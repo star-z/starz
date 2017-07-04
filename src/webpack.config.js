@@ -8,7 +8,6 @@ module.exports = {
   output: { filename: 'bundle.js', publicPath: '' },
   resolve: {
     alias: {
-      'styled-components$': 'styled-components/lib/index.js',
       'react-native': 'react-native-web'
     }
   },

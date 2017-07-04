@@ -55,7 +55,10 @@ module.exports = {
   entry: entry(),
   output: output(),
   resolve: {
-    alias: { 'styled-components$': 'styled-components/lib/index.js' }
+    alias: {
+      'styled-components$': 'styled-components/lib/index.js',
+      'react-native': 'react-native-web'
+    }
   },
   module: { loaders: loaders() },
   plugins: plugins()

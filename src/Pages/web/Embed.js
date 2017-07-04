@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Embed'
-import Code from '../Code'
-import Embed from '../components/Embed'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Embed'
+import Code from '../../Code'
+import Embed from '../../components/web/Embed'
 
 export default class extends Component {
   render() {

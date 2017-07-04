@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Autocomplete'
-import Code from '../Code'
-import Autocomplete from '../components/Autocomplete'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Autocomplete'
+import Code from '../../Code'
+import Autocomplete from '../../components/web/Autocomplete'
 
 let items = ['ruby', 'javascript', 'lua', 'go', 'c++', 'julia', 'java', 'c', 'scala','haskell']
 

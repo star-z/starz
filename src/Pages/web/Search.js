@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Search'
-import Code from '../Code'
-import Search from '../components/Search'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Search'
+import Code from '../../Code'
+import Search from '../../components/web/Search'
 
 export default class extends Component {
   clear(items) {

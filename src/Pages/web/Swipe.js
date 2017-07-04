@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Swipe'
-import Code from '../Code'
-import Swipe from '../components/Swipe'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Swipe'
+import Code from '../../Code'
+import Swipe from '../../components/web/Swipe'
 
 let items = [ { id: 0, value: 'ruby' }, { id: 1, value: 'javascript' }, { id: 2, value: 'lua' } ]
 

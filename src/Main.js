@@ -6,16 +6,18 @@ import {
   Link
 } from 'react-router-dom'
 
-import Autocomplete from './Pages/Autocomplete'
-import SortableList from './Pages/SortableList'
-import Dropdown from './Pages/Dropdown'
-import Search from './Pages/Search'
-import Gallery from './Pages/Gallery'
-import Button from './Pages/Button'
-import Modal from './Pages/Modal'
-import Swipe from './Pages/Swipe'
-import Embed from './Pages/Embed'
-import Toggle from './Pages/Toggle'
+import Autocomplete from './Pages/web/Autocomplete'
+import SortableList from './Pages/web/SortableList'
+import Dropdown from './Pages/web/Dropdown'
+import Search from './Pages/web/Search'
+import Gallery from './Pages/web/Gallery'
+import Button from './Pages/web/Button'
+import Modal from './Pages/web/Modal'
+import Swipe from './Pages/web/Swipe'
+import Embed from './Pages/web/Embed'
+import Toggle from './Pages/web/Toggle'
+
+import Tabs from './Pages/native/Tabs'
 
 import styles from './Main.css'
 
@@ -42,9 +44,12 @@ export default class Projects extends Component {
       		</div>
       	</div>
       	<div styleName='navigation fixed'>
+          <p style={{background: '#ffff00', display: 'inline-block', padding: '0px 0.8rem 0 0.6rem'}}>
+            <i>web</i>
+          </p>
       		<div>
       			<ul styleName='list'>
-              <li styleName='link active'>
+              <li styleName='link'>
                 <Link to='/'>
                   SortableList
                 </Link>
@@ -95,7 +100,21 @@ export default class Projects extends Component {
                 </Link>
       				</li>
       			</ul>
+          </div>
+
+          <div>
+            <p style={{background: '#ffff00', display: 'inline-block', padding: '0px 0.8rem 0 0.6rem'}}>
+              <i>native</i>
+            </p>
+            <ul styleName='list'>
+              <li styleName='link'>
+                <Link to='/native-tabs'>
+                  Tabs
+                </Link>
+        			</li>
+        		</ul>
       		</div>
+
       		<div styleName='github'>
       			<a href='https://github.com/StevenIseki/starjs'>
               fork on github
@@ -115,6 +134,7 @@ export default class Projects extends Component {
                 <Route path="/button" component={Button} />
                 <Route path="/modal" component={Modal} />
                 <Route path="/swipe" component={Swipe} />
+                <Route exact path="/native-tabs" component={Tabs} />
               </div>
       		</div>
       	</div>

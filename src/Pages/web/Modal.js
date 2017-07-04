@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Modal'
-import Code from '../Code'
-import Modal from '../components/Modal'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Modal'
+import Code from '../../Code'
+import Modal from '../../components/web/Modal'
 
 export default class extends Component {
   render() {

@@ -38,9 +38,10 @@
     "postcss-loader": "^1.2.1",
     "prismjs": "^1.6.0",
     "react": ">=15.3.1",
-    "react-router-dom": "^4.1.1",
     "react-css-modules": "^4.1.0",
     "react-dom": ">=15.3.1",
+    "react-native-web": "^0.0.109",
+    "react-router-dom": "^4.1.1",
     "style-loader": "^0.13.1",
     "styled-components": "^1.4.4",
     "webpack": "2.1.0-beta.27",
@@ -53,6 +54,7 @@
     "star-component"
   ],
   "dependencies": {
-    "lory.js": "^2.2.1"
+    "lory.js": "^2.2.1",
+    "react-native": "^0.45.1"
   }
 }

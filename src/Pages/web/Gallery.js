@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Gallery'
-import Code from '../Code'
-import Gallery from '../components/Gallery'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Gallery'
+import Code from '../../Code'
+import Gallery from '../../components/web/Gallery'
 
 const images = [
   { src: '//payload479.cargocollective.com/1/16/536696/11890358/prt_1472189875_2x.JPG', title: 'image 1' },

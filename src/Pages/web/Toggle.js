@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Toggle'
-import Code from '../Code'
-import Toggle from '../components/Toggle'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Toggle'
+import Code from '../../Code'
+import Toggle from '../../components/web/Toggle'
 
 let items = ['apple', 'orange', 'lemon', 'peach']
 

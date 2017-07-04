@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/SortableList'
-import Code from '../Code'
-import SortableList from '../components/SortableList'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/SortableList'
+import Code from '../../Code'
+import SortableList from '../../components/web/SortableList'
 
 let items = ['Red','Green','Blue','Yellow','Black','White','Orange'];
 

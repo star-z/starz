@@ -7,7 +7,10 @@ module.exports = {
   devtool: 'inline-source-map',
   output: { filename: 'bundle.js', publicPath: '' },
   resolve: {
-    alias: { 'styled-components$': 'styled-components/lib/index.js' }
+    alias: {
+      'styled-components$': 'styled-components/lib/index.js',
+      'react-native': 'react-native-web'
+    }
   },
   module: {
     rules: [

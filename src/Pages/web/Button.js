@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Button'
-import Code from '../Code'
-import Button from '../components/Button'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Button'
+import Code from '../../Code'
+import Button from '../../components/web/Button'
 
 export default class extends Component {
   render() {

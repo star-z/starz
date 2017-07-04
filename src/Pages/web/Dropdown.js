@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import ExampleCode from '!!../prism-loader?language=javascript!../components/Dropdown'
-import Code from '../Code'
-import Dropdown from '../components/Dropdown'
+import ExampleCode from '!!../../prism-loader?language=javascript!../../components/web/Dropdown'
+import Code from '../../Code'
+import Dropdown from '../../components/web/Dropdown'
 
 let options = ['reactjs','vue','glimmer']
 

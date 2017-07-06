@@ -17,6 +17,7 @@ import Modal from './Pages/web/Modal'
 import Swipe from './Pages/web/Swipe'
 import Embed from './Pages/web/Embed'
 import Toggle from './Pages/web/Toggle'
+import Tabs from './Pages/web/Tabs'
 
 /* native */
 import TabsNative from './Pages/native/Tabs'
@@ -98,6 +99,11 @@ export default class Projects extends Component {
                   Modal
                 </Link>
       				</li>
+              <li styleName='link'>
+                <Link to='/tabs'>
+                  Tabs
+                </Link>
+      				</li>
       			</ul>
           </div>
 
@@ -147,6 +153,7 @@ export default class Projects extends Component {
                 <Route path="/button" component={Button} />
                 <Route path="/modal" component={Modal} />
                 <Route path="/swipe" component={Swipe} />
+                <Route path="/tabs" component={Tabs} />
                 <Route exact path="/native-tabs" component={TabsNative} />
                 <Route exact path="/native-search" component={SearchNative} />
                 <Route exact path="/native-emojipicker" component={EmojiPickerNative} />
